@@ -8,6 +8,29 @@ package ikertareacolasdeprioridad;
  *
  * @author ikero
  */
-public class Nodo {
+public class Nodo <T> {
+    
+    T valor;
+    Nodo Siguiente;
+    
+    public Nodo(T valor)
+    {
+        this.valor = valor;
+        this.Siguiente = null;
+    }
+    
+    public Object obtenervalor()
+    {
+        return valor;
+    }
+    
+    public void enlazarSiguiente(Nodo n)
+    {
+        Siguiente=n;
+    }
+    
+    public Nodo obtenerSiguiente(){
+        return Siguiente;
+    }
     
 }
